@@ -16,4 +16,4 @@ A lightweight PHP tool for downloading multiple images concurrently in bulk usin
 2. Include the `ImageDownloader` class in your project to start downloading images.  
 
 ## Usage  
-Please refer to the example in `examples/example.php` for guidance on using the tool effectively.  
+Please refer to the example in `example/example.php` for guidance on using the tool effectively.  
