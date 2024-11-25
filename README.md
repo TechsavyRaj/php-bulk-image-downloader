@@ -23,4 +23,4 @@ A lightweight PHP tool for downloading multiple images concurrently in bulk usin
 
 Please refer to the example in `example/example.php` for guidance on using the tool effectively.  
 
-Created by TechsavyRaj - [[GitHub Profile Link]](https://github.com/TechsavyRaj)
+Created by [TechsavyRaj](https://github.com/TechsavyRaj)
