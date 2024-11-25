@@ -83,6 +83,7 @@ class ImageDownloader
 
         curl_multi_close($multi_curl);
         // Generates a file to log failed URLs
+        if(!empty($failed_urls))
         file_put_contents('failed_logs.json', json_encode($failed));
         return $completed_requests;
     }
