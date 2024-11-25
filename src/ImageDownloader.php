@@ -11,7 +11,7 @@ class ImageDownloader
      * @param int $batch_size Number of images to download in each batch.
      * @return int Total number of images successfully downloaded.
      */
-    private function download_images_concurrently($image_urls, $batch_size = 100)
+    public function download_images_concurrently($image_urls, $batch_size = 100, $generate_logs = true)
     {
         $multi_curl = curl_multi_init();
         $curl_handles = [];
@@ -83,7 +83,7 @@ class ImageDownloader
 
         curl_multi_close($multi_curl);
         // Generates a file to log failed URLs
-        if(!empty($failed_urls))
+        if($generate_logs && !empty($failed_urls))
         file_put_contents('failed_logs.json', json_encode($failed));
         return $completed_requests;
     }
